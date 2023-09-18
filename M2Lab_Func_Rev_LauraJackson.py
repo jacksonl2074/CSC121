@@ -6,7 +6,7 @@ CSC 121 M2Lab - Function Review
 Laura K. Jackson
 """
 
-import function_m2lab as calcCost
+import functions as fn
 
 def main():      # menu for user to select a choice 
     print("Menu")
@@ -19,9 +19,8 @@ def main():      # menu for user to select a choice
     
     if choice == '1':
         print("dollar store function")
-        
         count = int(input("Enter number of items: "))
-        calcCost()
+        fn.calcCost(count)
         
     elif choice == '2':
         print("Exit program")
@@ -30,6 +29,7 @@ def main():      # menu for user to select a choice
         # add a loop to make a valid choice?
         
 # call to main()        
-main()
+if __name__ == "__main__":
+    main()
 
 
